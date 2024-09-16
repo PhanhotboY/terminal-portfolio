@@ -8,12 +8,17 @@
 
     <style>
       :root {
-        --size: 1.2;
+        --size: 1.3;
       }
 
       .command,
       .directory {
         cursor: pointer;
+      }
+
+      .terminal {
+        background-color: #1d2936;
+        font-weight: bold;
       }
     </style>
   </head>
@@ -23,6 +28,6 @@
     <script src="https://cdn.jsdelivr.net/npm/figlet/lib/figlet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/isomorphic-lolcat"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/xml_formatting.js"></script>
-    <script src="my-terminal.js"></script>
+    <script src="my-terminal.js" type="module"></script>
   </body>
 </html>
