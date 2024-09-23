@@ -191,6 +191,18 @@ export const COMMANDS = {
       }
     },
   },
+  gimmecat: {
+    description: 'Get a random cat',
+    async exec() {
+      const index = Math.round(Math.random() * 579);
+      // const image = await fetch(`public/cats/images(${index}).jpeg`);
+      // const data = await response.json();
+      return (
+        "\n<white>Here's a random cat for you:</white>\n" +
+        `\t<img src="./public/cats/cat_${index}.jpeg" style="height: 300px" alt="cat" />\n`
+      );
+    },
+  },
   credits: {
     description: 'list the used libraries',
     exec() {
