@@ -11,7 +11,7 @@ export const PORTFOLIO = {
       ],
     ].map(
       ([university, url, major, year]) =>
-        `* <a href="${url}" target="_blank">${university}</a> <yellow>"${major}"</yellow> ${year}`
+        `* <a href="${url}" target="_blank"><orange>${university}</orange></a> <aqua>"${major}"</aqua> ${year}`
     ),
     '<br>',
   ].flat(),
@@ -20,15 +20,38 @@ export const PORTFOLIO = {
     '<white>Open Source projects</white>',
     [
       [
-        'jQuery Terminal',
-        'https://terminal.jcubic.pl',
-        'library that adds terminal interface to websites',
+        'Shopee Clone',
+        'https://github.com/PhanhotboY/Shopee-Clone',
+        'A clone of Shopee, an e-commerce platform',
+      ],
+      [
+        'Terminal Portfolio',
+        'https://github.com/PhanhotboY/terminal-portfolio',
+        'A terminal portfolio using jQuery Terminal',
+      ],
+      [
+        'Github Profile Card',
+        'https://github.com/PhanhotboY/profile-card',
+        'A Github profile card using Github API',
+      ],
+      [
+        'Blockchain-based Reward System',
+        'https://github.com/PhanhotboY/Blockchain-Based-Reward-System',
+        'A reward system incentivizes members with ERC777 Tokens',
+      ],
+      [
+        'Deep Reinforcement Learning for Automated Stock Trading',
+        'https://github.com/PhanhotboY/Deep-Reinforcement-Learning-for-Automated-Stock-Trading',
+        'A deep reinforcement learning model for automated stock trading',
       ],
     ].map(([name, url, description = '']) => {
-      return `* <a href="${url}">${name}</a> &mdash; ${description}`;
+      return [
+        '<br>',
+        `* <a href="${url}" target="_blank"><orange>${name}</orange></a> &mdash; ${description}`,
+      ];
     }),
     '<br>',
-  ].flat(),
+  ].flat(2),
   skills: [
     '<br>',
     '<white>languages</white>',
@@ -38,15 +61,23 @@ export const PORTFOLIO = {
 
     '<br>',
     '<white>libraries/frameworks</white>',
-    ['Express.js', 'React.js', 'Next.js', 'Ethers.js', 'Jest'].map(
+    ['Express.js', 'React.js', 'Next.js', 'Ethers.js', 'Hardhat', 'Jest'].map(
       (lib) => `* <green>${lib}</green>`
     ),
 
     '<br>',
     '<white>tools</white>',
-    ['Docker', 'git', 'MySQL', 'MongoDB', 'AWS', 'Redis', 'GNU/Linux'].map(
-      (lib) => `* <blue>${lib}</blue>`
-    ),
+    [
+      'Docker',
+      'Git',
+      'MySQL',
+      'MongoDB',
+      'PostgreSQL',
+      'AWS',
+      'Redis',
+      'Stripe',
+      'GNU/Linux',
+    ].map((lib) => `* <blue>${lib}</blue>`),
     '<br>',
   ].flat(),
 };

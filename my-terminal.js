@@ -80,7 +80,7 @@ function ready() {
   term
     .echo(() => rainbow(render('Terminal Portfolio'), seed), { ansi: false })
     .echo(
-      '<white>Welcome to my Terminal Portfolio</white>\n' +
+      '<white>Welcome to my Terminal Portfolio</white>\n\n' +
         'Type (or click) <yellow class="command">help</yellow> to list available clickable commands\n\n' +
         '- Press <white>TAB</white> to autocomplete commands and directories\n' +
         '- Double <white>TAB</white> to get suggestions\n' +
